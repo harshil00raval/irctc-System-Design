@@ -1,0 +1,44 @@
+Functionality :
+search_train(src, dest, date, class)
+check_availability(train_no, src, dest, date, class)
+book_ticket(train_no, src, dest, date, class, no_of_seats, passanger_details)
+cancel_ticket(pnr_no, seat_no)
+PNR_status_check(pnr_no)
+chcek_booking_history(user_info)
+
+-- this table contains all direct routs on all possible trains in all classes
+-- runs_on has the list of days on which the train runs
+Train_Time_Table
+| src | dest | train_no | runs_on | start_time | end_time | class | no_of_seats |
+
+-- this table contains data about every train
+-- stations has the info about all the station and time in JSON format for given train
+Train_table
+| train_id | train_name | src | dest | start_time | end_time | stations | runs_on |
+
+User_table
+| user_id | name | email | ph_no | id_type | id_no |
+
+--this table contains availability info on all routs for 3 months
+Availability_table
+| date | src| dest | train | class | no_of_available_seats | no_of_booked_seats |
+
+--this table contains available seat nos between given src and dest in a given train for given date for 3 months in future
+Seat_pool
+| date | src | dest | train_no | class | seat_no |
+
+--this table contains available waiting nos between given src and dest in a given train for given date for 3 months in future
+Waiting_pool
+| date | src | dest | train_no | class | waiting_no |
+
+Booking_info
+| booking_id | name | age | sex | id_type | id_no |
+
+Bookings
+| PNR_NO | booking_id | date | train_no | src | dest | class | no of seats reserved | no of seats waiting |
+
+Reservation_table
+| PNR_NO | Booking_id | seat_no |
+
+Waiting_table
+| PNR_NO | Booking_id | waiting_no |
