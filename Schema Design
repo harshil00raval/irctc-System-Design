@@ -44,7 +44,7 @@ Bookings
 | PNR_NO | booking_id | date | train_no | src | dest | class | no of seats reserved | no of seats waiting |
 
 Reservation_table
-| PNR_NO | Booking_id | person_id | seat_no |
+| PNR_NO | person_id | seat_no |
 
 Waiting_table
-| PNR_NO | Booking_id | person_id | waiting_no |
+| PNR_NO | person_id | waiting_no |
