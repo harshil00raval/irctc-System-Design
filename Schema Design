@@ -12,9 +12,14 @@ Train_Time_Table
 | src | dest | train_no | runs_on | start_time | end_time | class | no_of_seats |
 
 -- this table contains data about every train
--- stations has the info about all the station and time in JSON format for given train
 Train_table
-| train_id | train_name | train_type | src | dest | start_time | end_time | stations | runs_on |
+| train_no | train_name | train_type | src | dest | start_time | end_time | runs_on |
+
+Train_Station_mapper
+| Train_no | station_code | arrival_time | departure_time |
+
+Station_table
+|station_code | station_name | city | State | pincode | Contact_no | station_head |
 
 User_table
 | user_id | name | email | ph_no | id_type | id_no |
@@ -48,3 +53,6 @@ Reservation_table
 
 Waiting_table
 | PNR_NO | person_id | waiting_no |
+
+Booking_Archive
+| user_id | booking_date | Booking_id | PNR_No | date | train_no | src | dest | class | person_id | seat_no | Waiting_no |
