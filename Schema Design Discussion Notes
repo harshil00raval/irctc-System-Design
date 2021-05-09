@@ -1,8 +1,3 @@
-coach_details
-| coach_id | coach_type | no_of_seats |
-
-train_coach_details
-| -id- | train_no | coach_id | no_of_coaches |
 
 ==================================================================================
 Train_tabel can be normalized based on station where we can create 2 seperate tables. one can hold info about train_id and station id and other can map it to train_table
