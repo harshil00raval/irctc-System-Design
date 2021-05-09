@@ -9,11 +9,17 @@ chcek_booking_history(user_info)
 -- this table contains all direct routs on all possible trains in all classes
 -- runs_on has the list of days on which the train runs
 Train_Time_Table
-| src | dest | train_no | runs_on | start_time | end_time | class | no_of_seats |
+| src | dest | train_no | runs_on | start_time | end_time | coach_type(class) | no_of_seats |
 
 -- this table contains data about every train
 Train_table
 | train_no | train_name | train_type | src | dest | start_time | end_time | runs_on |
+
+coach_details
+| coach_id | coach_type(class) | no_of_seats |
+
+train_coach_details
+| train_no | coach_id | no_of_coaches |
 
 Train_Station_mapper
 | Train_no | station_code | arrival_time | departure_time |
