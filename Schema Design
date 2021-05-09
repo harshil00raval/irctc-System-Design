@@ -32,15 +32,15 @@ User_table
 
 --this table contains availability info on all routs for 3 months
 Availability_table
-| date | src| dest | train | class | no_of_available_seats | no_of_booked_seats |
+| availability_id | date | src| dest | train_no | class | no_of_available_seats | no_of_booked_seats |
 
 --this table contains available seat nos between given src and dest in a given train for given date for 3 months in future
 Seat_pool
-| date | src | dest | train_no | class | seat_no |
+| availability_id | seat_no |
 
 --this table contains available waiting nos between given src and dest in a given train for given date for 3 months in future
 Waiting_pool
-| date | src | dest | train_no | class | waiting_no |
+| availability_id | waiting_no |
 
 Booking_info
 | booking_id | booking_time | booking_status |
