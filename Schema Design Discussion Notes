@@ -6,11 +6,11 @@ train_coach_details
 
 ==================================================================================
 Train_tabel can be normalized based on station where we can create 2 seperate tables. one can hold info about train_id and station id and other can map it to train_table
-this is helpful when we want to change time add or delete a station
+this is helpful when we want to change time add or delete a station - DONE
 
 more user_info will be required when we want to add features or conditions on booking by a user (1 user can only book 1 ticket in tatkal)
 
-we can create a seperate table for booking_archive for read only historic queries from the user
+we can create a seperate table for booking_archive for read only historic queries from the user - DONE
 
 ===================================================================================
 
